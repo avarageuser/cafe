@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -41,7 +43,7 @@
             <h3>Nosotros</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+                    <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
                 </div>
                 <div class="entrada__contenido">
                     <h3 class="no-margin">Tipo de Cafe</h3>
@@ -52,7 +54,7 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
                 </div>
                 <div class="entrada__contenido">
                     <h3 class="no-margin"> Recetas con Cafe</h3>
@@ -63,7 +65,7 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
                 </div>
                 <div class="entrada__contenido">
                     <h3 class="no-margin">Beneficios del Cafe</h3>
@@ -78,28 +80,46 @@
             <ul class="cursos no-padding">
                 <li class="widget-curso">
                     <h4 class="no-margin">Tecnicas de Extraccion de Cafe</h4>
-                    <p class="widget-emp__label">Precio:
+                    <p class="widget-curso__label">Precio:
                         <span class="widget-curso__info">Gratis</span>
                     </p>
-                    <p class="widget-curso-label">Cupo:
-                        <span class="widget-curso__info">$20</span>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">20 - Online</span>
                     </p>
                     <a href="entrada.html" class="boton boton--secundario">Leer Entrada</a>
                 </li>
 
                 <li class="widget-curso">
                     <h4 class="no-margin">4 Recetas de Cafe</h4>
-                    <p class="widget-emp__label">Precio:
+                    <p class="widget-curso__label">Precio:
                         <span class="widget-curso__info">Gratis</span>
                     </p>
-                    <p class="widget-curso-label">Cupo:
-                        <span class="widget-curso__info">Gratis</span>
+                    <p class="widget-curso__label">Cupo:
+                        <span class="widget-curso__info">10 - Hibrido</span>
                     </p>
                     <a href="entrada.html" class="boton boton--secundario">Leer Entrada</a>
                 </li>
             </ul>
         </aside>
     </div>
+
+    <footer>
+        <div class="footer">
+            <div class="contenedor"></div>
+            <div class="contenedor">
+                <div class="barra">
+                    <a class="logo" href="index.html">
+                        <h1 class="logo__nombre no-margin centrar-texto">Cafe<span class="logo__bold">DelTatanga</span></h1>
+                    </a>
+    
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+                </div>
+        </div>
+    </footer>
     
 </body>
 </html>
